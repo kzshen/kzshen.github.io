@@ -1,0 +1,78 @@
+/* Sets a legible font and a comfortable width for reading */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 700px; /* Keeps the content from stretching too wide on large screens */
+    margin: 40px auto; /* Centers the content block on the page with space above/below */
+    padding: 0 20px; /* Adds a bit of padding on the sides for smaller screens */
+    color: #333; /* Dark gray text for better contrast than pure black */
+}
+
+/* Styles for Headings */
+h1, h2 {
+	font-family: Helvetica, Arial, sans-serif;
+    color: #111; /* Nearly black for strong headings */
+    border-bottom: 1px solid #ddd; /* A very subtle separator line */
+    padding-bottom: 5px;
+}
+
+/* Styles for Links (Hyperlinks) */
+a {
+    color: #007bff; /* A standard, professional blue for links */
+    text-decoration: none; /* Removes the underline by default for a cleaner look */
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+a:hover {
+    color: #0056b3; /* A slightly darker blue when the user hovers */
+    text-decoration: underline; /* Adds the underline back on hover for clarity */
+}
+
+/* Horizontal Rule style */
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee; /* Very light gray divider */
+    margin: 30px 0;
+}
+
+table {
+    width: 100%; /* Use the full available width within the content block */
+    border-collapse: collapse; /* Removes space between cell borders for a cleaner look */
+    margin: 30px 0; /* Matches 'hr' margin for consistent vertical spacing */
+}
+
+th, td {
+    padding: 10px; /* Comfortable spacing inside cells */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid #ddd; /* Subtle row separator, matches heading border */
+}
+
+th {
+    font-weight: bold; /* Makes header text bold */
+    color: #111; /* Matches heading color for emphasis */
+}
+
+/* Adds a very light background to even-numbered rows in the table body for readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+/* Styles for Figures and Captions */
+figure {
+    margin: 30px 0; /* Matches other block elements for consistent vertical spacing */
+    padding: 0; /* Resets any default padding */
+}
+
+/* Ensures images inside figures don't overflow the container */
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space sometimes left below images */
+}
+
+figcaption {
+	display: block; /* Explicitly ensures the caption is on its own line */
+	font-size: 0.9em; /* Slightly smaller text for the caption */
+	color: #555; /* A bit lighter than the main text */
+	margin-top: 10px; /* Space between the image/content and the caption */
+	}
